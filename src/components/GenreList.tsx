@@ -7,8 +7,8 @@ const GenreList = () => {
     return (
         <List>
             {
-                isLoading && [...Array(20)].map(x => (
-                    <ListItem key={x} paddingY={3}>
+                isLoading && [...Array(20)].map((_x, i) => (
+                    <ListItem key={i} paddingY={3}>
                         <HStack>
                             <Skeleton boxSize={8} borderRadius={5} marginRight={2}/>
                             <SkeletonText noOfLines={1} width={'70px'}/>
